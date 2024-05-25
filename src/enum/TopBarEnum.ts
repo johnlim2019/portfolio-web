@@ -2,6 +2,7 @@ export enum TopBarEnum {
     WRITINGS = "Writings",
     PROJECTS = "PROJECTS",
     HOME = "HOME",
+    GAMES = "GAMES"
 }
 
 export function string2CountTopBarEnum(input: string): string {
@@ -12,6 +13,8 @@ export function string2CountTopBarEnum(input: string): string {
             return TopBarEnum.HOME
         case TopBarEnum.PROJECTS:
             return TopBarEnum.PROJECTS
+        case TopBarEnum.GAMES:
+            return TopBarEnum.GAMES
         default:
             throw new Error("IllegalArgumentError")
     }

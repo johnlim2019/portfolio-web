@@ -1,4 +1,4 @@
-import { Button, Container, Group, Title } from '@mantine/core'
+import { Button, Container, Divider, Group, Title } from '@mantine/core'
 import { IconBrandLinkedin } from '@tabler/icons-react';
 import { TopBarEnum } from '../../enum/TopBarEnum';
 
@@ -13,13 +13,19 @@ function TopBar(props: IProps): JSX.Element {
             <Container size="xl" p='md'>
                 <Group justify='space-between'>
                     <div>
-                        <Title>John Lim</Title>
+                        <Group>
+                            <Title>John Lim </Title>
+                            <Divider color='black' orientation='vertical' />
+                            <Title order={5}>Full Stack Web Dev</Title>
+                        </Group>
                     </div>
                     <div>
                         {props.currentPage == TopBarEnum.WRITINGS && <Button radius='xl' variant='light'>Writings</Button>}
                         {props.currentPage != TopBarEnum.WRITINGS && <Button radius='xl' variant='transparent'>Writings</Button>}
                         {props.currentPage == TopBarEnum.PROJECTS && <Button radius='xl' variant='light'>Projects</Button>}
                         {props.currentPage != TopBarEnum.PROJECTS && <Button radius='xl' variant='transparent'>Projects</Button>}
+                        {props.currentPage == TopBarEnum.GAMES && <Button radius='xl' variant='light'>Games</Button>}
+                        {props.currentPage != TopBarEnum.GAMES && <Button radius='xl' variant='transparent'>Games</Button>}
                         <a href="https://www.linkedin.com/in/lim-jie-sheng-john-baa3731a1/" rel="noopenernoreferrer">
                             <Button radius='xl' variant='filled' leftSection={
                                 <IconBrandLinkedin size={30} />
