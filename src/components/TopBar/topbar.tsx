@@ -15,7 +15,7 @@ function TopBar(props: IProps): JSX.Element {
                     <div>
                         <Group>
                             <Title>John Lim </Title>
-                            <Divider color='black' orientation='vertical' />
+                            <Divider color="white" orientation='vertical' />
                             <Title order={5}>Full Stack Web Dev</Title>
                         </Group>
                     </div>
