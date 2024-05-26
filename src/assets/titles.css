@@ -12,7 +12,7 @@
 .homeTitleContainerShade {
     position: relative;
     width: 100%;
-    height: 25em;
+    height: 100%;
     background: rgba(0,0,0,0);
     color: white;
     text-align: center;
