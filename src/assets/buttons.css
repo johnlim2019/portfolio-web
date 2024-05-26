@@ -1,0 +1,9 @@
+.minimalUnderlineButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.minimalUnderlineButton:active {
+    transform: translateY(2px);
+  }
+

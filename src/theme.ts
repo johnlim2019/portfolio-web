@@ -1,11 +1,10 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-    fontFamily: 'Verdana, sans-serif',
+    fontFamily: 'Verdana, sans-serif, Open Sans',
     fontFamilyMonospace: 'Monaco, Courier, monospace',
     headings: { fontFamily: 'Greycliff CF, sans-serif' },
-    primaryColor: "dark",
-    primaryShade: 9,
+    primaryColor: 'dark',
     components: {
         Button: {
             defaultProps: {
