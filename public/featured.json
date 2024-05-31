@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "title": "project title",
+            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
+            "paragraph": "This project needs a paragraph. The paragraph needs to share the key ideas that the project addresses. How you contributed to the project. And the main learning points, both technical and project skills"
+        },
+        {
+            "title": "project title",
+            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
+            "paragraph": "This project needs a paragraph. The paragraph needs to share the key ideas that the project addresses. How you contributed to the project. And the main learning points, both technical and project skills"
+        }
+    ]
+}

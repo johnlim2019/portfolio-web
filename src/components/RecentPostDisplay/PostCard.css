@@ -1,0 +1,46 @@
+.cardOuter {
+    min-width: 20em;
+    min-height: 20em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.cardOuter:hover {
+    cursor: pointer;
+    background-color: rgba(20,20,20,1);
+}
+
+
+.cardOuter:active {
+    transform: translateY(2px);
+}
+
+
+.cardInner {
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cardComponent {
+    height: 100%;
+    width: 45%;
+    min-width: 25em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.headerContainer {
+    width: 100%;
+    align-content: flex-start;
+    margin-top: 5em;
+}
+
+.link {
+    text-decoration: none;
+    color: none;
+    background-color: none;
+}
