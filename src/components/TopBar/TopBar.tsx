@@ -3,7 +3,7 @@ import { IconBrandLinkedin } from '@tabler/icons-react';
 import { TopBarEnum } from '../../enum/TopBarEnum';
 import "../../assets/titles.css"
 import "../../assets/buttons.css"
-import "./TopBar.css"
+import styles from "./TopBar.module.css"
 import { useNavigate } from 'react-router-dom';
 
 interface IProps {
@@ -25,7 +25,7 @@ function TopBar(props: IProps): JSX.Element {
                             </Button>
                         </Group>
                     </div>
-                    <div id='topBarContainer'>
+                    <div className={styles.topBarContainer}>
                         {props.currentPage == TopBarEnum.WRITINGS && <Button radius='xl' variant='light' >Writings</Button>}
                         {props.currentPage != TopBarEnum.WRITINGS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton' >Writings</Button>}
                         {props.currentPage == TopBarEnum.PROJECTS && <Button radius='xl' variant='light' >Projects</Button>}
