@@ -1,38 +1,38 @@
 .homeTitleContainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-image: url("/public/title-bg.png");
-    background-size: cover;
-    color: white;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-  }
-.homeTitleContainerShade {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0);
-    color: white;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    line-height: 300px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/title-bg.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
 
-.homeTitleText1 {
-    text-transform: capitalize;
-    font-size: 60px;
-    letter-spacing: 0.5em;    
-    word-spacing: 0.5em;
-    font-weight: lighter;
-  }
+.homeTitleContainerShade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  line-height: 300px;
+}
 
-.homeTitleText2 {
-    text-transform: capitalize;
-    font-size: 20px;
-    letter-spacing: 0.2em;    
-    word-spacing: 0.2em;
-    font-weight: 100;
-  }
+.homeTitleText1.mantine-Title-root {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  word-spacing: 0.5em;
+  font-weight: 400;
+}
+
+.homeTitleText2.mantine-Title-root {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  word-spacing: 0.2em;
+  font-weight: 100;
+}

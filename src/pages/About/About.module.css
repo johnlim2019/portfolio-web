@@ -1,0 +1,39 @@
+.stackContainer {
+    max-width: 40em;
+}
+
+.aboutHeader1 {
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+}
+
+.aboutHeader2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 0.3em;
+    font-weight: 100;
+}
+
+.aboutHeader3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.aboutText {
+    font-size: 16px;
+}
+
+.aboutHeader {
+
+    @media (min-width: em(400px)) {
+        max-width: 85%;
+    }
+
+    @media (min-width: em(600px)) {
+        max-width: 65%;
+    }
+
+}

@@ -1,24 +1,26 @@
-import { AspectRatio, Center, Container, Divider, Stack, Text, Title } from "@mantine/core"
+import { AspectRatio, Button, Center, Container, Divider, Stack, Text, Title } from "@mantine/core"
 import "../../assets/buttons.css"
 import "../../assets/containers.css"
 import "../../assets/titles.css"
 import TopBar from "../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../enum/TopBarEnum"
 import RecentPostDisplay from "../../components/RecentPostDisplay/RecentPostDisplay"
+import { useNavigate } from "react-router-dom"
 
 function HomePage(): JSX.Element {
 
+    const navigate = useNavigate();
     return (
         <>
             <TopBar currentPage={TopBarEnum.HOME} />
             <AspectRatio ratio={16 / 9} w='100%'>
                 <div className="homeTitleContainer">
                     <div className="homeTitleContainerShade">
-                        <Title tt="uppercase" fw={400} className="homeTitleText1">John Lim</Title>
+                        <Title className="homeTitleText1">John Lim</Title>
                         <Center p='1em'>
                             <Divider color="white" w="60%"></Divider>
                         </Center>
-                        <Title order={3} fw={100} tt="uppercase" className="homeTitleText2">Full Stack Web Developer</Title>
+                        <Title order={3} className="homeTitleText2">Full Stack Web Developer</Title>
                     </div>
                 </div>
             </AspectRatio>
@@ -31,11 +33,12 @@ function HomePage(): JSX.Element {
                         <Text fs="italic">01 about</Text>
                     </Center>
                     <Text ta="center">
-                        Graduated from SUTD class of 2024 with: <br /> Bachelor's of Engineering - Honours with Distinction.
+                        Graduated from SUTD class of 2024 with: <br /> Bachelor of Engineering - Honours with Distinction.
                     </Text>
-                    <Text ta="center">Major: Computer Science and Design</Text>
-                    <Text ta="center">Minor: Artificial Intelligence</Text>
-                    <Text ta="center">Minor: Digital Humanities</Text>
+                    <Button variant="outline" onClick={() => { navigate("/about") }}>
+                        <Text>See Full Resume</Text>
+                    </Button>
+
                     <Center p='lg'>
                         <Divider orientation="vertical" color="white" h='5em'></Divider>
                     </Center>
