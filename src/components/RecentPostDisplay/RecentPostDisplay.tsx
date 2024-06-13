@@ -1,20 +1,48 @@
-import { Group, Image, Paper, Stack, Text, Title } from '@mantine/core';
+import { Title } from '@mantine/core';
+import { useEffect, useState } from 'react';
 import "../../assets/buttons.css";
 import "../../assets/containers.css";
 import "../../assets/titles.css";
+import { ICardList, IPostCard, IProps } from './Interfaces/IPostCard';
+import PostCard from './PostCard';
 import "./PostCard.css";
-import { useEffect } from 'react';
 
-function RecentPostDisplay(): JSX.Element {
+
+
+function RecentPostDisplay(props: IProps): JSX.Element {
+
+    const [data, setData] = useState<IPostCard[]>([]);
+    const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
     function loadData(): null {
-
+        fetch(props.jsonFile)
+            .then(async response => {
+                const details = await response.json();
+                // console.log(details);
+                const typedDetails = details as unknown as ICardList;
+                setData(typedDetails.items);
+                setIsLoaded(true)
+            })
+            .catch(error => {
+                console.error(error);
+            });
         return null;
     }
 
     useEffect(() => {
         loadData();
-    })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
+    if (!isLoaded) {
+        return (
+            <div className='headerContainer'>
+                <Title order={3} fw={100} tt='uppercase' className='homeTitleText2'>Featured projects</Title>
+            </div>
+        )
+    }
+
+
 
     return (
         <>
@@ -22,36 +50,15 @@ function RecentPostDisplay(): JSX.Element {
                 <Title order={3} fw={100} tt='uppercase' className='homeTitleText2'>Featured projects</Title>
             </div>
             <div>
-                <Paper radius="md" className='cardOuter' >
-                    <Group grow className='cardInner' justify='center'>
-                        <Image w="50%" className='cardComponent' src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png"></Image>
-                        <Stack w="40%" className='cardComponent' justify='Flex-start'>
-                            <Title ta="right" order={3} fw={9000} tt='uppercase' className='homeTitleText2'>Project Title</Title>
-                            <Text ta='justify'>
-                                This project needs a paragraph.
-                                The paragraph needs to share the key ideas that the project addresses.
-                                How you contributed to the project.
-                                And the main learning points, both technical and project skills
-                            </Text>
-                        </Stack>
-                    </Group>
-                </Paper>
+                {
 
-                <Paper radius="md" className='cardOuter' >
-                    <Group grow className='cardInner' justify='center'>
-                        <Image w="50%" className='cardComponent' src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png"></Image>
-                        <Stack w="40%" className='cardComponent' justify='Flex-start'>
-                            <Title ta="right" order={3} fw={9000} tt='uppercase' className='homeTitleText2'>Project Title</Title>
-                            <Text ta='justify'>
-                                This project needs a paragraph.
-                                The paragraph needs to share the key ideas that the project addresses.
-                                How you contributed to the project.
-                                And the main learning points, both technical and project skills
-                            </Text>
-                        </Stack>
-                    </Group>
-                </Paper>
-            </div>
+                    data.map((value, index) => (
+                        <PostCard key={index} title={value.title} date={value.date} image={value.image} paragraph={value.paragraph}></PostCard>
+                    ))
+
+                }
+
+            </div >
         </>
     )
 }
