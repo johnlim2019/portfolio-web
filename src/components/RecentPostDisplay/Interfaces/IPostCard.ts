@@ -5,8 +5,9 @@ export interface IPostCard {
     paragraph: string
 }
 
-export interface IProps {
-    jsonFile: string
+export interface IRecentPostDisplayProps {
+    jsonFile: string,
+    title: string
 }
 
 export interface ICardList {
