@@ -1,4 +1,5 @@
 export interface IWritingPageArticle {
     title: string,
-    paragraphs: string[]
+    paragraphs: string[],
+    citations: string[]
 }

@@ -14,6 +14,7 @@ function WritingPage(): JSX.Element {
     const location = useLocation();
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
     const [article, setArticle] = useState<string[]>([]);
+    const [citations, setCitations] = useState<string[]>([]);
     const [props, setProps] = useState<IPostCard>();
     const [articleTitle, setArticleTitle] = useState<string>("");
 
@@ -31,6 +32,7 @@ function WritingPage(): JSX.Element {
             .then(details => {
                 const typedDetails = details as IWritingPageArticle;
                 setArticle(typedDetails.paragraphs);
+                setCitations(typedDetails.citations);
                 setArticleTitle(typedDetails.title);
                 setIsLoaded(true);
             })
@@ -78,9 +80,19 @@ function WritingPage(): JSX.Element {
                             </div>
                         ))
                     }
+                    <Title className='homeTitleText3'>Bibliography</Title>
+                    <Divider color="white"></Divider>
+                    {
+                        citations.map((value, index) => (
+                            <div key={index}>
+                                <Text ta='justify' key={index}>{value}</Text>
+                                <Space h='1em'></Space>
+                            </div>
+                        ))
+                    }
                 </Stack>
 
-            </Container>
+            </Container >
 
 
         </>
