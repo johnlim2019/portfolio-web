@@ -59,7 +59,7 @@ function RecentPostDisplay(props: IRecentPostDisplayProps): JSX.Element {
             <div>
                 {
                     data.map((value, index) => (
-                        <PostCard key={index} title={value.title} date={value.date} image={value.image} paragraph={value.paragraph} slug={value.slug}></PostCard>
+                        <PostCard key={index} title={value.title} date={value.date} image={value.image} paragraph={value.paragraph} slug={`/${props.slugPrefix}/${value.slug}`}></PostCard>
                     ))
                 }
 

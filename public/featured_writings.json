@@ -5,42 +5,42 @@
             "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
             "date": "Nov 2019",
             "paragraph": "How do we know, that what we perceive is reliable? By exploring Descartes's method of doubt and his conclusions on mind-body dualism, the essay critiques his approach and considers its lasting impact on modern epistemology.",
-            "slug": "/writings/descartes-essay"
+            "slug": "descartes-essay"
         },
         {
             "title": "Shakespeare's Hamlet",
             "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png",
             "date": "April 2024",
             "paragraph": "This essay examines how Hamlet and Laertes fulfils the classical framework of tragedian, and how Laertes becomes a foil to Hamlet.",
-            "slug": "/writings/hamlet-essay"
+            "slug": "hamlet-essay"
         },
         {
             "title": "Shakespeare's Twelfth Night",
             "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
             "date": "March 2024",
             "paragraph": "This essay examines cross-dressing and how Shakespeare uses it to explore Elizabethan sexuality and subvert gender roles of his time.",
-            "slug": "/writings/twelfth-night-essay"
+            "slug": "twelfth-night-essay"
         },
         {
             "title": "Health Communication in Screen for Life",
             "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
             "date": "Nov 2023",
             "paragraph": "This looks into Singapore's HPB's Screen for Life programme and the effectiveness of its messaging regarding healthcare as a preventative and recurrent process.",
-            "slug": "/writings/health-comm-sg"
+            "slug": "health-comm-sg"
         },
         {
             "title": "Green Financing",
             "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
             "date": "April 2023",
             "paragraph": "Short reflection on green financing base on B. van Veelen's essay \"Cash Cows? Assembling low-carbon agriculture through green finance\".",
-            "slug": "/writings/green-finance-van-veelen"
+            "slug": "green-finance-van-veelen"
         },
         {
             "title": "Finding value in cryptocurrencies",
             "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
             "date": "March 2023",
             "paragraph": "An extended musing about cryptocurrencies. And the potential value such decentralised financial networks have to attract investors.",
-            "slug": "/writings/finding-value-in-cryptocurrencies"
+            "slug": "finding-value-in-cryptocurrencies"
         }
     ]
 }

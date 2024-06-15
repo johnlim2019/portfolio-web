@@ -8,7 +8,8 @@ export interface IPostCard {
 
 export interface IRecentPostDisplayProps {
     jsonFile: string,
-    title: string
+    title: string,
+    slugPrefix: string
 }
 
 export interface ICardList {
