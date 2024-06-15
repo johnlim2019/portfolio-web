@@ -16,15 +16,22 @@ function RecentPostDisplay(props: IRecentPostDisplayProps): JSX.Element {
 
     function loadData(): null {
         fetch(props.jsonFile)
-            .then(async response => {
-                const details = await response.json();
+            .then(response => {
+                console.log(response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP error status: ${response.status}`);
+                } else {
+                    return response.json();
+                }
+            }).then(details => {
                 // console.log(details);
                 const typedDetails = details as ICardList;
-                setData(typedDetails.items);
+                setData(typedDetails.items.slice(0, 3));
                 setIsLoaded(true)
             })
             .catch(error => {
                 console.error(error);
+                setIsLoaded(true);
             });
         return null;
     }
