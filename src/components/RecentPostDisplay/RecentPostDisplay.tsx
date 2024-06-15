@@ -5,9 +5,6 @@ import "../../assets/containers.css";
 import "../../assets/titles.css";
 import { ICardList, IPostCard, IRecentPostDisplayProps } from './Interfaces/IPostCard';
 import PostCard from './PostCard';
-import "./PostCard.css";
-
-
 
 function RecentPostDisplay(props: IRecentPostDisplayProps): JSX.Element {
 
