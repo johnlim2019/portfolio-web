@@ -7,6 +7,7 @@ import { TopBarEnum } from "../../enum/TopBarEnum";
 import { IWritingPageArticle } from "./Interfaces/IWritingPage";
 import { useLocation, useParams } from "react-router-dom";
 import { IPostCard } from "../../components/RecentPostDisplay/Interfaces/IPostCard";
+import styles from "./WritingPage.module.css"
 
 function WritingPage(): JSX.Element {
 
@@ -75,7 +76,7 @@ function WritingPage(): JSX.Element {
                     {
                         article.map((value, index) => (
                             <div key={index}>
-                                <Text ta='justify' key={index}>{value}</Text>
+                                <Text className={styles.textPara} ta='justify' key={index}>{value}</Text>
                                 <Space h='1em'></Space>
                             </div>
                         ))
