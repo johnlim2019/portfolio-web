@@ -19,7 +19,7 @@ function RecentPostDisplay(props: IRecentPostDisplayProps): JSX.Element {
             .then(async response => {
                 const details = await response.json();
                 // console.log(details);
-                const typedDetails = details as unknown as ICardList;
+                const typedDetails = details as ICardList;
                 setData(typedDetails.items);
                 setIsLoaded(true)
             })
@@ -51,11 +51,9 @@ function RecentPostDisplay(props: IRecentPostDisplayProps): JSX.Element {
             </div>
             <div>
                 {
-
                     data.map((value, index) => (
-                        <PostCard key={index} title={value.title} date={value.date} image={value.image} paragraph={value.paragraph}></PostCard>
+                        <PostCard key={index} title={value.title} date={value.date} image={value.image} paragraph={value.paragraph} slug={value.slug}></PostCard>
                     ))
-
                 }
 
             </div >

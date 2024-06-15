@@ -2,7 +2,8 @@ export interface IPostCard {
     title: string,
     image: string,
     date: string,
-    paragraph: string
+    paragraph: string,
+    slug: string
 }
 
 export interface IRecentPostDisplayProps {
