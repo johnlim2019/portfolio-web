@@ -76,8 +76,11 @@ function WritingPage(): JSX.Element {
                     {
                         article.map((value, index) => (
                             <div key={index}>
-                                <Text className={styles.textPara} ta='justify' key={index}>{value}</Text>
-                                <Space h='1em'></Space>
+                                <Text ta='justify' key={index}>
+                                    <p className={styles.textPara}>
+                                        {value}
+                                    </p>
+                                </Text>
                             </div>
                         ))
                     }
