@@ -23,7 +23,11 @@ function RecentPostDisplay(props: IRecentPostDisplayProps): JSX.Element {
             }).then(details => {
                 // console.log(details);
                 const typedDetails = details as ICardList;
-                setData(typedDetails.items.slice(0, 3));
+                if (props.numberOfCards > 0) {
+                    setData(typedDetails.items.slice(0, props.numberOfCards));
+                } else {
+                    setData(typedDetails.items);
+                }
                 setIsLoaded(true)
             })
             .catch(error => {
