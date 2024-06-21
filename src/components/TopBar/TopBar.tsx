@@ -27,7 +27,7 @@ function TopBar(props: IProps): JSX.Element {
                     </div>
                     <div className={styles.topBarContainer}>
                         {props.currentPage == TopBarEnum.WRITINGS && <Button radius='xl' variant='light' >Writings</Button>}
-                        {props.currentPage != TopBarEnum.WRITINGS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton' >Writings</Button>}
+                        {props.currentPage != TopBarEnum.WRITINGS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton' onClick={() => { navigate("/writings") }}>Writings</Button>}
                         {props.currentPage == TopBarEnum.PROJECTS && <Button radius='xl' variant='light' >Projects</Button>}
                         {props.currentPage != TopBarEnum.PROJECTS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton'>Projects</Button>}
                         {props.currentPage == TopBarEnum.ABOUT && <Button radius='xl' variant='light' >About</Button>}
