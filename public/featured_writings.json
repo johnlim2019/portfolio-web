@@ -1,11 +1,11 @@
 {
     "items": [
         {
-            "title": "Reflection on epistemology using Descartes's Meditations of the First Philosophy",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
-            "date": "Nov 2019",
-            "paragraph": "How do we know, that what we perceive is reliable? By exploring Descartes's method of doubt and his conclusions on mind-body dualism, the essay critiques his approach and considers its lasting impact on modern epistemology.",
-            "slug": "descartes-essay"
+            "title": "Finding value in cryptocurrencies",
+            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
+            "date": "March 2023",
+            "paragraph": "An extended musing about cryptocurrencies. And the potential value such decentralised financial networks have to attract investors.",
+            "slug": "finding-value-in-cryptocurrencies"
         },
         {
             "title": "Shakespeare's Hamlet",
@@ -36,11 +36,11 @@
             "slug": "green-finance-van-veelen"
         },
         {
-            "title": "Finding value in cryptocurrencies",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
-            "date": "March 2023",
-            "paragraph": "An extended musing about cryptocurrencies. And the potential value such decentralised financial networks have to attract investors.",
-            "slug": "finding-value-in-cryptocurrencies"
+            "title": "Reflection on epistemology using Descartes's Meditations of the First Philosophy",
+            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
+            "date": "Nov 2019",
+            "paragraph": "How do we know, that what we perceive is reliable? By exploring Descartes's method of doubt and his conclusions on mind-body dualism, the essay critiques his approach and considers its lasting impact on modern epistemology.",
+            "slug": "descartes-essay"
         }
     ]
 }
