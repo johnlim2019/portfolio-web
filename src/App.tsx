@@ -3,7 +3,7 @@ import HomePage from './pages/Home/Home'
 import About from './pages/About/About'
 import WritingPage from './pages/Writing Page/WritingPage'
 import WritingHomePage from './pages/WritingHomePage/WritingHomePage'
-import ProjectHomePage from './pages/ProjectsHomePAge/ProjectsHomePage'
+import ProjectHomePage from './pages/ProjectsHomePage/ProjectsHomePage'
 
 function App(): JSX.Element {
     return (
