@@ -29,7 +29,7 @@ function TopBar(props: IProps): JSX.Element {
                         {props.currentPage == TopBarEnum.WRITINGS && <Button radius='xl' variant='light' >Writings</Button>}
                         {props.currentPage != TopBarEnum.WRITINGS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton' onClick={() => { navigate("/writings") }}>Writings</Button>}
                         {props.currentPage == TopBarEnum.PROJECTS && <Button radius='xl' variant='light' >Projects</Button>}
-                        {props.currentPage != TopBarEnum.PROJECTS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton'>Projects</Button>}
+                        {props.currentPage != TopBarEnum.PROJECTS && <Button radius='xl' variant='transparent' className='minimalUnderlineButton' onClick={() => { navigate("/projects") }}>Projects</Button>}
                         {props.currentPage == TopBarEnum.ABOUT && <Button radius='xl' variant='light' >About</Button>}
                         {props.currentPage != TopBarEnum.ABOUT && <Button radius='xl' variant='transparent' onClick={() => { navigate("/about") }} className='minimalUnderlineButton'>About</Button>}
                         <a href="https://www.linkedin.com/in/lim-jie-sheng-john-baa3731a1/" rel="noopenernoreferrer">
