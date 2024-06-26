@@ -2,7 +2,7 @@ import { Card, Center, Container, Divider, Grid, Group, Image, List, ListItem, S
 import { IconAdjustments, IconArrowsSplit, IconClockUp, IconCloudNetwork, IconDashboard, IconLock, IconPhotoEdit, IconResize, IconUserQuestion, IconUsers, IconX } from "@tabler/icons-react";
 import { Brain, Building, LaptopFix } from "iconoir-react";
 import styles from "./CapstonePage.module.css"
-import "../../assets/containers.css";
+import "../../../assets/containers.css";
 
 function CapstonePage(): JSX.Element {
     const spaceHeight = 100;
