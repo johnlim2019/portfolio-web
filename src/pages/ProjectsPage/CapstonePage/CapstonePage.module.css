@@ -1,0 +1,43 @@
+.mediumWidth {
+    min-width: 50em;
+    width: 50%;
+    margin: auto;
+}
+
+.largeWidth {
+    align-content: center;
+    min-width: 80em;
+    width: 80%;
+    margin: auto;
+}
+.fullWidth {
+    align-content: center;
+    min-width: 100%;
+    margin: auto;
+}
+
+.paragraph{
+    padding-top: 2vh;
+    text-align: justify;
+    padding-top: 2vh;
+}
+
+.title {
+    color: var(--mantine-color-cyan-7);
+}
+
+.subtitle{
+    text-align: center;
+    font-weight: bold;
+    color: var(--mantine-color-cyan-6);
+}
+
+.highlight{
+    size: 'lg';
+    font-weight: bold;
+    color: var(--mantine-color-cyan-6);
+}
+
+.screenshot {
+    height: 500px;    
+}
