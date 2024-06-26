@@ -23,19 +23,19 @@
 }
 
 .title {
-    color: var(--mantine-color-cyan-7);
+    color: var(--mantine-color-cyan-5);
 }
 
 .subtitle{
     text-align: center;
     font-weight: bold;
-    color: var(--mantine-color-cyan-6);
+    color: var(--mantine-color-cyan-5);
 }
 
 .highlight{
     size: 'lg';
     font-weight: bold;
-    color: var(--mantine-color-cyan-6);
+    color: var(--mantine-color-cyan-5);
 }
 
 .screenshot {

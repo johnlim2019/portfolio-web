@@ -1,54 +1,54 @@
 import { Card, Center, Container, Divider, Grid, Group, Image, List, ListItem, Space, Stack, Text, ThemeIcon, Title } from "@mantine/core";
-import { IconAdjustments, IconArrowsSplit, IconClockUp, IconCloudNetwork, IconDashboard, IconLock, IconPhotoEdit, IconResize, IconUserQuestion, IconUsers, IconX } from "@tabler/icons-react";
+import { IconAdjustments, IconArrowsSplit, IconClockUp, IconCloudNetwork, IconDashboard, IconLock, IconPhotoEdit, IconResize, IconUserQuestion, IconX } from "@tabler/icons-react";
 import { Brain, Building, LaptopFix } from "iconoir-react";
-import styles from "./CapstonePage.module.css"
 import "../../../assets/containers.css";
+import styles from "./CapstonePage.module.css";
 
 function CapstonePage(): JSX.Element {
     const spaceHeight = 100;
     const iconSize = 80;
     const iconSizeLittle = 40;
     const dividerHeight = 5;
-    const dividerColor = "cyan.7";
+    const dividerColor = "cyan.5";
 
     return (
         <Container className="responsiveContainer">
             <Stack align="center" justify="center" >
                 <Container className={styles.fullWidth}>
-                    <Grid className={styles.fullWidth} align="stretch" justify="center">
-                        <Grid.Col span={4} >
-                            <Stack h='100%' justify="center" align="flex-end">
-                                <Title>Small Item Counting</Title>
-                                <Title order={4}>Team Members</Title>
-                                <Text flex='end'>
-                                    Celeste Ng(ESD), Pranhakar Dhilahesh(DAI), John Lim (CSD), Josiah Fong (CSD), Xiong Yang (CSD)
-                                </Text>
-                                <Title order={4}>Instructors</Title>
-                                <Text>Kwan Wei Lek</Text>
-                                <Title order={4}>Writing Instructors</Title>
-                                <Text>Delfinn Tan</Text>
-                            </Stack>
-                        </Grid.Col>
-                        <Grid.Col span={6} pt={50}>
-                            <Image h='auto%' w='80%' variant="scale-down" src='./logo4-Chip3NoText@4x.png'></Image>
-                        </Grid.Col>
-                    </Grid>
+                    <Card bg="gray.2">
+                        <Grid className={styles.fullWidth} align="stretch" justify="center">
+                            <Grid.Col span={6} pt={50}>
+                                <Image variant="scale-down" src='/capstone-project/batulaChip3NoText@2x.png'></Image>
+                            </Grid.Col>
+                            <Grid.Col span={6} >
+                                <Stack h='100%' justify="center" align="flex-start">
+                                    <Title c="black">Count Calcula (TSI Counting)</Title>
+                                    <Title c="black" order={4}>Team Members</Title>
+                                    <Text c="black" flex='end'>
+                                        Celeste Ng(ESD), Pranhakar Dhilahesh(DAI), John Lim (CSD), Josiah Fong (CSD), Xiong Yang (CSD)
+                                    </Text>
+                                    <Title c="black" order={4}>Instructors</Title>
+                                    <Text c="black">Kwan Wei Lek</Text>
+                                    <Title c="black" order={4}>Writing Instructors</Title>
+                                    <Text c="black">Delfinn Tan</Text>
+                                </Stack>
+                            </Grid.Col>
+                        </Grid>
+                    </Card>
                 </Container>
-                <Card className={styles.mediumWidth} withBorder shadow="xl" bg='yellow.1'>
-                    <Title className={styles.title} style={{ textAlign: 'center' }} c="red" order={2}>Problem: Inbound process for small items</Title>
-                    <Text className={styles.subtitle}>Inefficient use of manual labour to count inbound items.</Text>
+                <Card className={styles.mediumWidth} withBorder shadow="xl">
+                    <Title className={styles.title} order={2}>Project Background</Title>
+                    <List>
+                        <List.Item>Warehouse personnel will have to manually count small-sized products, which come in varying appearances and quantities, as a part of the inbound receiving requirements before the products are received into the warehouse.</List.Item>
+                        <List.Item>The current manual counting process is time-consuming, labour-dependent, and has a high possibility of human error.</List.Item>
+                    </List>
+
+                </Card>
+                <Card className={styles.mediumWidth} withBorder shadow="xl">
+                    <Title className={styles.title} style={{ textAlign: 'center' }} c="red" order={2}>Key Issues</Title>
                     <Divider h={dividerHeight} color={dividerColor}></Divider>
                     <Grid align="flex-start" justify="center" gutter='xl'>
-                        <Grid.Col span={4}>
-                            <Center>
-                                <ThemeIcon variant="subtle" size={spaceHeight}>
-                                    <IconUsers size={iconSize} />
-                                </ThemeIcon>
-                            </Center>
-                            <Text className={styles.subtitle}>Labour Shortages</Text>
-                            <Text className={styles.paragraph}>The increasing cost of labour requires each worker to be more productive in their assigned tasks.</Text>
-                        </Grid.Col>
-                        <Grid.Col span={4}>
+                        <Grid.Col span={6}>
                             <Center>
                                 <ThemeIcon variant="subtle" size={spaceHeight}>
                                     <IconClockUp size={iconSize} />
@@ -57,7 +57,7 @@ function CapstonePage(): JSX.Element {
                             <Text className={styles.subtitle}>Time Consuming</Text>
                             <Text className={styles.paragraph}>Employing man-hours for inbound item counting diverts labour from other crucial tasks, impacting operational efficiency.</Text>
                         </Grid.Col>
-                        <Grid.Col span={4}>
+                        <Grid.Col span={6}>
                             <Center>
                                 <ThemeIcon variant="subtle" size={spaceHeight}>
                                     <IconX size={iconSize} />
@@ -69,22 +69,18 @@ function CapstonePage(): JSX.Element {
                     </Grid>
                 </Card>
             </Stack >
-            <Space h={spaceHeight}></Space>
-            <Stack pt='xl' justify="center" align="center">
-                <Image src="/constraints-solutions@4x.png"></Image>
-            </Stack >
-            <Space h={150}></Space >
+            <Image p="lg" src="/capstone-project/boxconstraints-solutions.png"></Image>
             <Container className={styles.mediumWidth}>
-                <Title>Solution: AI Powered Automation</Title>
-                <Image src='./logo4-ChipTitle2@4x.png'></Image>
+                <Title>Solution: Machine Vision Automation</Title>
+                <Card bg="gray.2">
+                    <Image src='/capstone-project/batulaArtboard-9@2x.png'></Image>
+                </Card>
                 <Space h={spaceHeight}></Space>
                 <Card shadow='lg' withBorder >
                     <Title className={styles.title} order={2}>What is TSI Counting?</Title>
                     <Divider h={dividerHeight} color={dividerColor}></Divider>
                     <Text className={styles.paragraph}>
-                        TSI Counting offers a practical AI-driven solution designed to streamline inbound management.
-                        Our web service and lightbox automate inbound item counting, improving process efficiency and accuracy in inbound operations.
-                        Easily integrated into existing counting stations, our solution introduces AI efficiency without disrupting established workflows.
+                        Count Calcula (TSI Counting) offers a practical AI-driven solution designed to streamline inbound management. Our web service and lightbox automate inbound item counting and improve process efficiency and accuracy for warehouse inbound operations. Our solution introduces AI efficiency, which can be easily integrated into existing counting stations, without disrupting established workflows.
                     </Text>
                 </Card>
                 <Space h={spaceHeight}></Space>
@@ -121,7 +117,7 @@ function CapstonePage(): JSX.Element {
                 <Grid align="flex-start" justify="center" gutter='xl' className={styles.mediumWidth} >
                     <Grid.Col span={6}>
                         <Center>
-                            <ThemeIcon variant="subtle" color="cyan.6" size={spaceHeight}>
+                            <ThemeIcon variant="subtle" size={spaceHeight}>
                                 <IconDashboard size={iconSize}></IconDashboard>
                             </ThemeIcon>
                         </Center>
@@ -135,7 +131,7 @@ function CapstonePage(): JSX.Element {
                     </Grid.Col>
                     <Grid.Col span={6}>
                         <Center>
-                            <ThemeIcon variant="subtle" color="cyan.6" size={spaceHeight}>
+                            <ThemeIcon variant="subtle" size={spaceHeight}>
                                 <IconCloudNetwork size={iconSize}></IconCloudNetwork>
                             </ThemeIcon>
                         </Center>
@@ -160,7 +156,7 @@ function CapstonePage(): JSX.Element {
                     </Text>
                 </div>
                 <Card className={styles.largeWidth} withBorder shadow="xl">
-                    <Image src="/exploded_diagramArtboard 3@4x.png"></Image>
+                    <Image src="/capstone-project/exploded_diagramArtboard 3@4x.png"></Image>
                 </Card>
 
                 <Grid align="flex-start" justify="center" gutter='xl' className={styles.mediumWidth} >
@@ -185,8 +181,8 @@ function CapstonePage(): JSX.Element {
                         </Text>
                         <Text className={styles.paragraph}>
                             To improve consistency of model's performance, the scale and perspective of the items need to be fixed.
-                            This reduces the ambiguity caused by different perspectives. The height is fixed at <Text span c="cyan" size='xl' className={styles.subtitle}>30cm</Text>.
-                            For smaller items that need to be photographed at closer distance, we have a shelf at <Text span c="cyan" size='xl' className={styles.subtitle}>15cm</Text>.
+                            This reduces the ambiguity caused by different perspectives. The height is fixed at <Text span c="cyan" className={styles.subtitle}>30cm</Text>.
+                            For smaller items that need to be photographed at closer distance, we have a shelf at <Text span c="cyan" className={styles.subtitle}>15cm</Text>.
                         </Text>
                     </Grid.Col>
                     <Grid.Col span={4}>
@@ -197,7 +193,7 @@ function CapstonePage(): JSX.Element {
                             Small footprint
                         </Text>
                         <Text className={styles.paragraph}>
-                            The footprint of the light box is about <Text span c="cyan" size='xl' className={styles.subtitle}>41 cm by 31 cm</Text>. This makes it easy to deploy at existing counting stations.
+                            The footprint of the light box is about <Text span c="cyan" className={styles.subtitle}>41 cm by 31 cm</Text>. This makes it easy to deploy at existing counting stations.
                             There is no need to change the warehouse floor-plan or workflow making it easy to deploy.
                         </Text>
                     </Grid.Col>
@@ -213,7 +209,7 @@ function CapstonePage(): JSX.Element {
                         We took <Text span c='cyan' className={styles.subtitle}>200</Text>  images for each SKU.
                     </Text>
                     <Text className={styles.subtitle}>Dataset pre-processing pipeline</Text>
-                    <Image src="/AI Training.png"></Image>
+                    <Image src="/capstone-project/AI Training.png"></Image>
                     <Grid align="flex-start" justify="center" gutter='xl' className={styles.mediumWidth} >
                         <Grid.Col span={6}>
                             <Center>
@@ -333,7 +329,7 @@ function CapstonePage(): JSX.Element {
                 <Space h={spaceHeight}></Space>
                 <Title className={styles.title}>Architecture Diagram</Title>
                 <Card className={styles.mediumWidth} withBorder shadow="xl">
-                    <Image src="/Architecture.png"></Image>
+                    <Image src="/capstone-project/Architecture.png"></Image>
                 </Card>
                 <Space h={spaceHeight}></Space>
                 <Title className={styles.title} order={3}>Capturing Records</Title>
@@ -346,7 +342,7 @@ function CapstonePage(): JSX.Element {
                 <Grid align="flex-start" justify="center" gutter='xl' className={styles.mediumWidth} >
                     <Grid.Col span={4}>
                         <Center>
-                            <Image className={styles.screenshot} src={"/barcode-scanner.svg"}></Image>
+                            <Image className={styles.screenshot} src={"/capstone-project/barcode-scanner.svg"}></Image>
                         </Center>
                         <Text className={styles.subtitle}>
                             Barcode Scanner
@@ -358,7 +354,7 @@ function CapstonePage(): JSX.Element {
                     </Grid.Col>
                     <Grid.Col span={4}>
                         <Center>
-                            <Image className={styles.screenshot} src={"/ai-camera.svg"}></Image>
+                            <Image className={styles.screenshot} src={"/capstone-project/ai-camera.svg"}></Image>
                         </Center>
                         <Text className={styles.subtitle}>
                             AI Scanner
@@ -370,7 +366,7 @@ function CapstonePage(): JSX.Element {
                     </Grid.Col>
                     <Grid.Col span={4}>
                         <Center>
-                            <Image className={styles.screenshot} src={"/image-storage.svg"}></Image>
+                            <Image className={styles.screenshot} src={"/capstone-project/image-storage.svg"}></Image>
                         </Center>
                         <Text className={styles.subtitle}>
                             Image Storage.
@@ -391,7 +387,7 @@ function CapstonePage(): JSX.Element {
                 <Grid align="flex-start" justify="center" gutter='xl' className={styles.mediumWidth} >
                     <Grid.Col span={4}>
                         <Center>
-                            <Image className={styles.screenshot} src={"/csv-download.png"}></Image>
+                            <Image className={styles.screenshot} src={"/capstone-project/csv-download.png"}></Image>
                         </Center>
                         <Text className={styles.subtitle}>
                             Download records as csv
@@ -402,7 +398,7 @@ function CapstonePage(): JSX.Element {
                     </Grid.Col>
                     <Grid.Col span={4}>
                         <Center>
-                            <Image className={styles.screenshot} src={"/zip-download.svg"}></Image>
+                            <Image className={styles.screenshot} src={"/capstone-project/zip-download.svg"}></Image>
                         </Center>
                         <Text className={styles.subtitle}>
                             Download images
@@ -413,7 +409,7 @@ function CapstonePage(): JSX.Element {
                     </Grid.Col>
                     <Grid.Col span={4}>
                         <Center>
-                            <Image className={styles.screenshot} src={"/archive-buttons.svg"}></Image>
+                            <Image className={styles.screenshot} src={"/capstone-project/archive-buttons.svg"}></Image>
                         </Center>
                         <Text className={styles.subtitle}>
                             Archive records
@@ -463,16 +459,14 @@ function CapstonePage(): JSX.Element {
                 <Space h={spaceHeight}></Space>
                 <Title order={2} className={styles.title}>A collaboration between:</Title>
                 <Center>
-                    <Image fit='scale-down' width={200} height={200} src="sutd.png"></Image>
+                    <Image fit='scale-down' width={100} height={70} src="/capstone-project/sutd.png"></Image>
                     <ThemeIcon variant="subtle" color="black" size={60}>
                         <IconX size={60} ></IconX>
                     </ThemeIcon>
-                    <Image fit='scale-down' width={100} height={90} src="db.png"></Image>
+                    <Image fit='scale-down' width={100} height={90} src="/capstone-project/db.png"></Image>
                 </Center>
             </Stack >
-        </Container>
-
-
+        </Container >
     )
 }
 
