@@ -1,43 +1,61 @@
 .mediumWidth {
-    min-width: 50em;
-    width: 50%;
+    max-width: 95%;
+    width: 50em;
     margin: auto;
 }
 
 .largeWidth {
     align-content: center;
-    min-width: 80em;
-    width: 80%;
+    width: 80em;
+    max-width: 95%;
+
     margin: auto;
 }
+
 .fullWidth {
     align-content: center;
     min-width: 100%;
     margin: auto;
 }
 
-.paragraph{
+.paragraph {
     padding-top: 2vh;
     text-align: justify;
     padding-top: 2vh;
 }
 
 .title {
-    color: var(--mantine-color-cyan-5);
-}
-
-.subtitle{
     text-align: center;
-    font-weight: bold;
     color: var(--mantine-color-cyan-5);
 }
 
-.highlight{
-    size: 'lg';
+.subtitle {
+    text-align: center;
+    color: var(--mantine-color-cyan-5);
+    padding-bottom: 10px;
+}
+
+.highlight {
     font-weight: bold;
     color: var(--mantine-color-cyan-5);
 }
 
 .screenshot {
-    height: 500px;    
+    height: 500px;
+}
+
+.title1 {
+    font-size: 50px;
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+.flexCol3 {
+    min-width: 20%;
+    max-width: 16em;
+}
+
+.flexCol2 {
+    min-width: 40%;
+    max-width: 25em;
 }
