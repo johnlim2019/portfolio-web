@@ -1,10 +1,10 @@
-import { AspectRatio, Card, Center, Container, Divider, Grid, Group, Image, List, ListItem, Space, Stack, Text, ThemeIcon, Title } from "@mantine/core";
+import { AspectRatio, Card, Center, Container, Divider, Group, Image, List, ListItem, Space, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import { IconAdjustments, IconArrowsSplit, IconBackground, IconClockUp, IconCloudNetwork, IconDashboard, IconDimensions, IconLock, IconPhotoEdit, IconPhotoSensor, IconResize, IconSparkles, IconUserQuestion, IconX } from "@tabler/icons-react";
 import { Brain, Building, LaptopFix } from "iconoir-react";
 import "../../../assets/containers.css";
-import styles from "./CapstonePage.module.css";
 import TopBar from "../../../components/TopBar/TopBar";
 import { TopBarEnum } from "../../../enum/TopBarEnum";
+import styles from "./CapstonePage.module.css";
 
 function CapstonePage(): JSX.Element {
     const spaceHeight = "5em";
@@ -20,23 +20,26 @@ function CapstonePage(): JSX.Element {
             <TopBar currentPage={TopBarEnum.HOME}></TopBar>
             <Space h={spaceHeight}></Space>
             <Container className="responsiveContainer">
-                <Stack align="center" justify="center" >
-
-                    <Group wrap="nowrap">
-                        <Card bg={bgColor} maw="50%">
-                            <Image src='/capstone-project/batulaChip3NoText@2x.png'></Image>
-                        </Card>
-                        <Stack h='100%' justify="center" align="flex-start">
-                            <Title >Count Calcula (TSI Counting)</Title>
-                            <Title order={4}>Team Members</Title>
-                            <Text flex='end'>
-                                Celeste Ng(ESD), Pranhakar Dhilahesh(DAI), John Lim (CSD), Josiah Fong (CSD), Xiong Yang (CSD)
-                            </Text>
-                            <Title order={4}>Instructors</Title>
-                            <Text >Kwan Wei Lek</Text>
-                            <Title order={4}>Writing Instructors</Title>
-                            <Text >Delfinn Tan</Text>
-                        </Stack>
+                <Stack align="center" justify="center">
+                    <Group gap='xl' align="flex-start" justify="center" className={styles.mediumWidth}>
+                        <div className={styles.flexCol2}>
+                            <Card bg={bgColor}>
+                                <Image src='/capstone-project/batulaChip3NoText@2x.png'></Image>
+                            </Card>
+                        </div>
+                        <div className={styles.flexCol2}>
+                            <Stack h='100%' justify="center" align="flex-start">
+                                <Title >Count Calcula (TSI Counting)</Title>
+                                <Title order={4}>Team Members</Title>
+                                <Text flex='end'>
+                                    Celeste Ng(ESD), Pranhakar Dhilahesh(DAI), John Lim (CSD), Josiah Fong (CSD), Xiong Yang (CSD)
+                                </Text>
+                                <Title order={4}>Instructors</Title>
+                                <Text >Kwan Wei Lek</Text>
+                                <Title order={4}>Writing Instructors</Title>
+                                <Text >Delfinn Tan</Text>
+                            </Stack>
+                        </div>
                     </Group>
                     <Space h={spaceHeight}></Space>
 
@@ -49,10 +52,10 @@ function CapstonePage(): JSX.Element {
                     </Card>
                     <Space h={spaceHeight}></Space>
                     <Card className={styles.mediumWidth} withBorder shadow="xl">
-                        <Title className={styles.title} style={{ textAlign: 'center' }} c="red" order={2}>Key Issues</Title>
+                        <Title className={styles.title} style={{ textAlign: 'center' }} c={dividerColor} order={2}>Key Issues</Title>
                         <Divider h={dividerHeight} color={dividerColor}></Divider>
-                        <Grid align="flex-start" justify="center" gutter='xl'>
-                            <Grid.Col span={6}>
+                        <Group gap='xl' align="flex-start" justify="center">
+                            <div className={styles.flexCol2}>
                                 <Center>
                                     <ThemeIcon variant="subtle" size={spaceHeight}>
                                         <IconClockUp size={iconSize} />
@@ -60,8 +63,8 @@ function CapstonePage(): JSX.Element {
                                 </Center>
                                 <Text className={styles.subtitle}>Time Consuming</Text>
                                 <Text className={styles.paragraph}>Employing man-hours for inbound item counting diverts labour from other crucial tasks, impacting operational efficiency.</Text>
-                            </Grid.Col>
-                            <Grid.Col span={6}>
+                            </div>
+                            <div className={styles.flexCol2}>
                                 <Center>
                                     <ThemeIcon variant="subtle" size={spaceHeight}>
                                         <IconX size={iconSize} />
@@ -69,15 +72,15 @@ function CapstonePage(): JSX.Element {
                                 </Center>
                                 <Text className={styles.subtitle}>Error Prone</Text>
                                 <Text className={styles.paragraph}>Manual labour in counting inbound items is at risk of human error.</Text>
-                            </Grid.Col>
-                        </Grid>
+                            </div>
+                        </Group>
                     </Card>
                 </Stack >
                 <Space h={spaceHeight}></Space>
-                <Divider h={dividerHeight} color={dividerColor}></Divider>
-                <Title className={styles.title} style={{ textAlign: 'center' }} order={2}>Project Objective</Title>
-                <Text>The project aims to reduce the time spent and increase the accuracy rate of the counting process by leveraging technology</Text>
-                <Divider h={dividerHeight} color={dividerColor}></Divider>
+                <Card className={styles.mediumWidth}>
+                    <Title className={styles.title} style={{ textAlign: 'center' }} order={2}>Project Objective</Title>
+                    <Text>The project aims to reduce the time spent and increase the accuracy rate of the counting process by leveraging technology</Text>
+                </Card>
                 <Space h={spaceHeight}></Space>
                 <Space h={spaceHeight}></Space>
                 <div className={styles.title1}><Text span c={highlightColor} inherit>Design</Text> Process</div>
@@ -102,7 +105,6 @@ function CapstonePage(): JSX.Element {
                 </Card>
                 <Space h={spaceHeight}></Space>
                 <Stack justify="center" align="center">
-
                     <Card className={styles.mediumWidth} withBorder shadow="xl">
                         <Group>
                             <ThemeIcon color={dividerColor} variant="subtle" size={iconSizeLittle}>
@@ -122,8 +124,8 @@ function CapstonePage(): JSX.Element {
                     <Text className={styles.subtitle}>Our choice:</Text>
                     <Title order={3} className={styles.title}>Ultralytics YOLO v8</Title>
                     <Divider h={dividerHeight} color={dividerColor} className={styles.mediumWidth}></Divider>
-                    <Grid align="flex-start" justify="center" gutter='xl' className={styles.mediumWidth} >
-                        <Grid.Col span={6}>
+                    <Group gap='xl' align="flex-start" justify="center" className={styles.largeWidth}>
+                        <div className={styles.flexCol2}>
                             <Center>
                                 <ThemeIcon variant="subtle" size={spaceHeight}>
                                     <IconDashboard size={iconSize}></IconDashboard>
@@ -135,8 +137,8 @@ function CapstonePage(): JSX.Element {
                             <Text className={styles.paragraph}>
                                 Its speed comes from its single-pass neural network. Its region proposal and classification are done in a single pass reducing computational overhead and speeding up the process.
                             </Text>
-                        </Grid.Col>
-                        <Grid.Col span={6}>
+                        </div>
+                        <div className={styles.flexCol2}>
                             <Center>
                                 <ThemeIcon variant="subtle" size={spaceHeight}>
                                     <IconCloudNetwork size={iconSize}></IconCloudNetwork>
@@ -148,23 +150,22 @@ function CapstonePage(): JSX.Element {
                             <Text className={styles.paragraph}>
                                 YOLO is a well-supported project. It has regular releases that improve the network's performance and accuracy. YOLO v8 in conjunction with Anchor boxes, now uses anchor-free detection. More flexible bounding box predictions improve the accuracy of the model.
                             </Text>
-                        </Grid.Col>
-                    </Grid >
+                        </div>
+                    </Group >
                     <div className={styles.mediumWidth}>
                         <Center>
                             <Title p={5} className={styles.title} order={3}>Light Box</Title>
                         </Center>
-                        <Divider h={dividerHeight} color={dividerColor} className={styles.mediumWidth}></Divider>
+                        <Divider h={dividerHeight} color={dividerColor}></Divider>
                         <Text className={styles.paragraph}>
                             We need to have a controlled environment.
                             Repeatable and consistent lighting and perspective
                             helps increase the reliability and accuracy of model results.
                         </Text>
                     </div>
-                    <Card withBorder shadow="xl" bg={bgColor}>
+                    <Card withBorder shadow="xl" bg={bgColor} className={styles.mediumWidth}>
                         <Image src="/capstone-project/boxArtboard-3@2x.png"></Image>
                     </Card>
-
                     <Group gap='xl' align="flex-start" justify="center">
                         <div className={styles.flexCol3}>
                             <Center>
@@ -211,11 +212,11 @@ function CapstonePage(): JSX.Element {
                         </div>
                     </Group>
                     <Space h={spaceHeight}></Space>
-                    <Stack>
+                    <Stack className={styles.mediumWidth}>
                         <Center>
                             <Title className={styles.title} order={3}>Building Dataset</Title>
                         </Center>
-                        <Divider h={dividerHeight} color={dividerColor} className={styles.mediumWidth}></Divider>
+                        <Divider h={dividerHeight} color={dividerColor}></Divider>
                         <Text className={styles.paragraph}>
                             Using the light box our client was able to help us take images for the dataset.
                             We took <Text span c='cyan' className={styles.subtitle}>200</Text>  images for each SKU.
@@ -275,15 +276,13 @@ function CapstonePage(): JSX.Element {
                         </div>
                     </Group>
                     <Space h={spaceHeight} ></Space>
-                    <Stack className={styles.mediumWidth}>
-                        <Center>
-                            <Title className={styles.title} order={3}>Training Model</Title>
-                        </Center>
-                        <Divider h={dividerHeight} color={dividerColor} className={styles.mediumWidth}></Divider>
-                        <Text className={styles.paragraph} style={{ fontWeight: 700 }}>
-                            One Model per SKU. This helped us achieve:
-                        </Text>
-                    </Stack>
+                    <Center>
+                        <Title className={styles.title} order={3}>Training Model</Title>
+                    </Center>
+                    <Divider h={dividerHeight} color={dividerColor}></Divider>
+                    <Text className={styles.paragraph}>
+                        One Model per SKU. This helped us achieve:
+                    </Text>
                     <Group gap='xl' align="flex-start" justify="center">
                         <div className={styles.flexCol3}>
                             <Center>
@@ -354,6 +353,11 @@ function CapstonePage(): JSX.Element {
                     </Card>
                     <Space h={spaceHeight}></Space>
                     <Title className={styles.title}>Architecture Diagram</Title>
+                    <div className={styles.mediumWidth}>
+                        <Text className={styles.paragraph}>
+                            We used Docker Compose to orchestrate the different components. The backend micro-services are connected within a single Docker Network. The frontend web app is within a separate Docker Network. Client traffic is encrypted through Reverse Proxy servers.
+                        </Text>
+                    </div>
                     <Card className={styles.mediumWidth} withBorder shadow="xl">
                         <Image src="/capstone-project/FINAL-DETAILED-ARCHITECTURE.png"></Image>
                     </Card>
@@ -407,7 +411,7 @@ function CapstonePage(): JSX.Element {
                     <Divider h={dividerHeight} color={dividerColor} className={styles.mediumWidth}></Divider>
                     <div className={styles.mediumWidth}>
                         <Text className={styles.paragraph}>
-                            Records are retrieved based on the submitted search query.
+                            In order to track the AI model’s results, each record is identified by a unique pair of SKU and Invoice number.
                         </Text>
                     </div>
                     <Group gap='xl' align="flex-start" justify="center">
@@ -481,16 +485,20 @@ function CapstonePage(): JSX.Element {
                                 to APIs and Web App features.
                             </Text>
                         </div>
-                    </Group >
+                    </Group>
                     <Space h={spaceHeight}></Space>
                     <Title order={2}>A collaboration between:</Title>
-                    <Center bg={bgColor}>
-                        <Image fit='scale-down' width={100} height={70} src="/capstone-project/sutd.png"></Image>
-                        <ThemeIcon variant="subtle" color="black" size={60}>
-                            <IconX size={60} ></IconX>
+                    <Group gap='xl' align="center" justify="center" wrap="nowrap">
+                        <div className={styles.flexCol3}>
+                            <Image fit='scale-down' height={60} src="/capstone-project/sutd.png"></Image>
+                        </div>
+                        <ThemeIcon variant="subtle" >
+                            <IconX ></IconX>
                         </ThemeIcon>
-                        <Image fit='scale-down' width={100} height={70} src="/capstone-project/db.png"></Image>
-                    </Center>
+                        <div className={styles.flexCol3}>
+                            <Image fit='scale-down' height={100} src="/capstone-project/db.png"></Image>
+                        </div>
+                    </Group>
                 </Stack >
             </Container >
         </>

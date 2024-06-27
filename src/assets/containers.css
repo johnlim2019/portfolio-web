@@ -1,11 +1,13 @@
 .responsiveContainer {
-    max-width: 90%;
-  
-    @media (min-width: em(400px)) {
-      max-width: 85%;
-    }
-  
-    @media (min-width: em(600px)) {
-      max-width: 65%;
-    }
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: em(400px)) {
+    max-width: 85%;
   }
+
+  @media (min-width: em(600px)) {
+    max-width: 65%;
+  }
+}

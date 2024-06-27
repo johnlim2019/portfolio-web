@@ -1,14 +1,12 @@
 .mediumWidth {
     max-width: 95%;
-    width: 50em;
+    width: 55em;
     margin: auto;
 }
 
 .largeWidth {
-    align-content: center;
     width: 80em;
     max-width: 95%;
-
     margin: auto;
 }
 
