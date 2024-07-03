@@ -1,9 +1,9 @@
 import { Card, Center, Container, Image, List, Stack, Text, Title } from "@mantine/core"
 import "../../../assets/containers.css"
 import "../../../assets/titles.css"
-import "../../../assets/global.css"
 import TopBar from "../../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../../enum/TopBarEnum"
+import styles from "./NLPProjectPage.module.css"
 
 function NLPProjectPage(): JSX.Element {
 
@@ -15,7 +15,7 @@ function NLPProjectPage(): JSX.Element {
                 <Stack align="center" gap="2em">
                     <Title className="homeTitleText2">Fake News Detection</Title>
                     <Text className="justifiedParagraph">
-                        This project was based on the WELFake <a href="https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification">dataset</a> which presented the Fake News Detection as a binary supervised learning problem.
+                        This project was based on the WELFake <a className={styles.link} href="https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification">dataset</a> which presented the Fake News Detection as a binary supervised learning problem.
                         The project's effectiveness is based on the accuracy of the binary prediction.
 
                     </Text>
