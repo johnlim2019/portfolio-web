@@ -2,3 +2,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.justifiedParagraph.mantine-Text-root {
+    text-align: justify;
+    line-height: 2em;
+}
