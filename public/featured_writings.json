@@ -2,42 +2,42 @@
     "items": [
         {
             "title": "Shakespeare's Hamlet",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png",
+            "image": "/writings-images/ai-hamlet.jpg",
             "date": "April 2024",
             "paragraph": "This essay examines how Hamlet and Laertes fulfils the classical framework of tragedian, and how Laertes becomes a foil to Hamlet.",
             "slug": "hamlet-essay"
         },
         {
             "title": "Shakespeare's Twelfth Night",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
+            "image": "/writings-images/ai-twelfth-night.jpg",
             "date": "March 2024",
             "paragraph": "This essay examines cross-dressing and how Shakespeare uses it to explore Elizabethan sexuality and subvert gender roles of his time.",
             "slug": "twelfth-night-essay"
         },
         {
             "title": "Health Communication in Screen for Life",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
+            "image": "/writings-images/screen-for-life.png",
             "date": "Nov 2023",
             "paragraph": "This looks into Singapore's HPB's Screen for Life programme and the effectiveness of its messaging regarding healthcare as a preventative and recurrent process.",
             "slug": "health-comm-sg"
         },
         {
             "title": "Green Financing",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
+            "image": "/writings-images/green-financing.jpg",
             "date": "April 2023",
             "paragraph": "Short reflection on green financing base on B. van Veelen's essay \"Cash Cows? Assembling low-carbon agriculture through green finance\".",
             "slug": "green-finance-van-veelen"
         },
         {
             "title": "Finding value in cryptocurrencies",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
+            "image": "/writings-images/ai-cryto.jpg",
             "date": "March 2023",
             "paragraph": "An extended musing about cryptocurrencies. And the potential value such decentralised financial networks have to attract investors.",
             "slug": "finding-value-in-cryptocurrencies"
         },
         {
             "title": "Reflection on epistemology using Descartes's Meditations of the First Philosophy",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
+            "image": "/writings-images/ai-descartes.jpg",
             "date": "Nov 2019",
             "paragraph": "How do we know, that what we perceive is reliable? By exploring Descartes's method of doubt and his conclusions on mind-body dualism, the essay critiques his approach and considers its lasting impact on modern epistemology.",
             "slug": "descartes-essay"

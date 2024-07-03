@@ -9,7 +9,7 @@
 
 .cardOuter:hover {
     cursor: pointer;
-    background-color: rgba(20,20,20,1);
+    background-color: rgba(20, 20, 20, 1);
 }
 
 
@@ -27,8 +27,8 @@
 
 .cardComponent {
     height: 100%;
-    width: 45%;
-    min-width: 25em;
+    width: 20%;
+    max-width: 10em;
     padding-top: 5px;
     padding-bottom: 5px;
 }
