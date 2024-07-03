@@ -2,7 +2,7 @@
     "items": [
         {
             "title": "Capstone Project",
-            "image": "/capstone-project/batulaArtboard-9@2x.png",
+            "image": "/capstone-project/batulalogo.png",
             "date": "Sept 2023 - April 2024",
             "paragraph": "This is the most comprehensive academic project I have been a part of. This project forced me to participate in all development lifecycle parts. From designing frontend elements, consulting with clients to ensure our design satisfies their needs, and dev-ops to deploy the project for the client to run their UAT. ",
             "slug": "capstone-project"

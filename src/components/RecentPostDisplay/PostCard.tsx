@@ -11,7 +11,7 @@ function PostCard(props: IPostCard): JSX.Element {
         <Link to={props.slug} state={{ props: props }} >
             <Paper radius="md" className={styles.cardOuter} >
                 <Group grow className={styles.cardInner} justify='center'>
-                    <Container className={styles.cardComponent} bg="white">
+                    <Container className={styles.cardComponent}>
                         <Image src={props.image}></Image>
                     </Container>
                     <Stack w="40%" className={styles.cardComponent} justify='Flex-start'>
