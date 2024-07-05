@@ -6,6 +6,7 @@ import TopBar from "../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../enum/TopBarEnum"
 import RecentPostDisplay from "../../components/RecentPostDisplay/RecentPostDisplay"
 import { useNavigate } from "react-router-dom"
+import BottomBar from "../../components/BottomBar/BottomBar"
 
 function HomePage(): JSX.Element {
 
@@ -59,7 +60,7 @@ function HomePage(): JSX.Element {
                 </Stack>
             </Container >
 
-
+            <BottomBar></BottomBar>
         </>
     )
 }
