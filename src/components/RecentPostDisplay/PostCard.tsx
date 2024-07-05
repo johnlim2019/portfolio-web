@@ -14,11 +14,14 @@ function PostCard(props: IPostCard): JSX.Element {
                     <Container className={styles.cardComponent}>
                         <Image src={props.image}></Image>
                     </Container>
-                    <Stack w="40%" className={styles.cardComponent} justify='Flex-start'>
-                        <Title ta="right" className='homeTitleText2'>{props.title}</Title>
-                        <Title ta="right" className='homeTitleText3'>{props.date}</Title>
-                        <Text ta='justify'>{props.paragraph}</Text>
-                    </Stack>
+                    <Container className={styles.cardComponent}>
+                        <Stack justify='Flex-start'>
+                            <Title ta="right" className='homeTitleText2'>{props.title}</Title>
+                            <Title ta="right" className='homeTitleText3'>{props.date}</Title>
+                            <Text ta='justify'>{props.paragraph}</Text>
+                        </Stack>
+                    </Container>
+
                 </Group>
             </Paper>
         </ Link >
