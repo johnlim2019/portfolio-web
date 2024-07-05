@@ -1,4 +1,4 @@
-import { Card, Group, Stack, Text, Title } from '@mantine/core';
+import { Card, Group, Space, Stack, Text, Title } from '@mantine/core';
 import "../../assets/buttons.css";
 import "../../assets/titles.css";
 
@@ -8,6 +8,7 @@ function BottomBar(): JSX.Element {
 
     return (
         <>
+            <Space h="50px"></Space>
             <Card>
                 <Group align='flex-start' justify='center'>
                     <Stack align='left' justify='flex-start' style={{ "width": "25em" }}>
