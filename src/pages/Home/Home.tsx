@@ -48,14 +48,14 @@ function HomePage(): JSX.Element {
                     <Text ta='justify'>
                         This portfolio encompasses diverse fields, ranging from culture to technology. This interdisciplinary background enables me to manage multimodal concepts effectively. It fosters a holistic perspective on how technology integrates into organisations and communities.
                     </Text>
-                    <RecentPostDisplay numberOfCards={2} title="Projects" jsonFile="./featured_projects.json" slugPrefix="projects" />
+                    <RecentPostDisplay numberOfCards={2} title="Recent Projects" jsonFile="./featured_projects.json" slugPrefix="projects" />
                     <Center p='lg'>
                         <Divider orientation="vertical" color="white" h='5em'></Divider>
                     </Center>
                     <Center>
                         <Text fs="italic">03 writings</Text>
                     </Center>
-                    <RecentPostDisplay numberOfCards={2} title="Writings" jsonFile="./featured_writings.json" slugPrefix="writings" />
+                    <RecentPostDisplay numberOfCards={2} title="Recent Writings" jsonFile="./featured_writings.json" slugPrefix="writings" />
                 </Stack>
             </Container >
 

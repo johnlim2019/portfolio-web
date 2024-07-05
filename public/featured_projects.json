@@ -9,31 +9,17 @@
         },
         {
             "title": "NLP Fake News Project",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
+            "image": "/card-photos/nlp.jpg",
             "date": "Feb 2024 - April 2024",
             "paragraph": "This project used an ensemble model to tackle the supervised learning NLP problem for the WELFake dataset. The sub-models used tensorflow neural networks to capture semantic and content information to inform the final prediction.",
             "slug": "nlp-welfake"
         },
         {
             "title": "Game Development Project",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
+            "image": "/card-photos/showcase.gif",
             "date": "Oct 2023 - Dec 2023",
             "paragraph": "Developed a top-down horde shooter using Unity. We applied abstract classes, inheritance, and interfaces for modular code design. It also provided an opportunity to demonstrate project version management, organising tests and triaging features based on test feedback received.",
             "slug": "unity"
-        },
-        {
-            "title": "Elements of Software Construction",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
-            "date": "May 2022 - Aug 2022",
-            "paragraph": "journeyside is a full-stack hotel booking web app created under the Software Construction 50.003 Module. Implemented a React front end with Redux Toolkit state management. It connects to a backend API, and proxy server built using Express.js",
-            "slug": "elements-software-construction"
-        },
-        {
-            "title": "Introduction to Digital Humanities",
-            "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
-            "date": "Jan 2022 - April 2022",
-            "paragraph": "Analysing Nanyang Art Movement pioneer Chen Wen Hsi's works against different influences from Post-Impressionist, Fauvist, and Shanghai School traditional Chinese ink.",
-            "slug": "intro-to-dh"
         }
     ]
 }
