@@ -5,6 +5,7 @@ import "../../../assets/containers.css";
 import TopBar from "../../../components/TopBar/TopBar";
 import { TopBarEnum } from "../../../enum/TopBarEnum";
 import styles from "./CapstonePage.module.css";
+import BottomBar from "../../../components/BottomBar/BottomBar";
 
 function CapstonePage(): JSX.Element {
     const spaceHeight = "5em";
@@ -501,6 +502,7 @@ function CapstonePage(): JSX.Element {
                     </Group>
                 </Stack >
             </Container >
+            <BottomBar />
         </>
 
     )

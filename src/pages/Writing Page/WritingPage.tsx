@@ -8,6 +8,7 @@ import { IWritingPageArticle } from "./Interfaces/IWritingPage";
 import { useLocation, useParams } from "react-router-dom";
 import { IPostCard } from "../../components/RecentPostDisplay/Interfaces/IPostCard";
 import styles from "./WritingPage.module.css"
+import BottomBar from "../../components/BottomBar/BottomBar";
 
 function WritingPage(): JSX.Element {
 
@@ -95,7 +96,7 @@ function WritingPage(): JSX.Element {
                 </Stack>
 
             </Container >
-
+            <BottomBar />
 
         </>
     )

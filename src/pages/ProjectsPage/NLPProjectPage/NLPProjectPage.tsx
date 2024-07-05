@@ -4,6 +4,7 @@ import "../../../assets/titles.css"
 import TopBar from "../../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../../enum/TopBarEnum"
 import styles from "./NLPProjectPage.module.css"
+import BottomBar from "../../../components/BottomBar/BottomBar"
 
 function NLPProjectPage(): JSX.Element {
 
@@ -207,7 +208,7 @@ function NLPProjectPage(): JSX.Element {
                 </Stack>
             </Container >
 
-
+            <BottomBar />
         </>
     )
 }

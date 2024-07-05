@@ -3,6 +3,7 @@ import "../../../assets/containers.css"
 import "../../../assets/titles.css"
 import TopBar from "../../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../../enum/TopBarEnum"
+import BottomBar from "../../../components/BottomBar/BottomBar"
 
 function GameDevPage(): JSX.Element {
 
@@ -47,6 +48,7 @@ function GameDevPage(): JSX.Element {
                 </Stack>
             </Container >
 
+            <BottomBar />
 
         </>
     )
