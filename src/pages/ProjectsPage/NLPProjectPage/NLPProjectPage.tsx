@@ -4,6 +4,7 @@ import "../../../assets/titles.css"
 import TopBar from "../../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../../enum/TopBarEnum"
 import styles from "./NLPProjectPage.module.css"
+import BottomBar from "../../../components/BottomBar/BottomBar"
 
 function NLPProjectPage(): JSX.Element {
 
@@ -15,9 +16,8 @@ function NLPProjectPage(): JSX.Element {
                 <Stack align="center" gap="2em">
                     <Title className="homeTitleText2">Fake News Detection</Title>
                     <Text className="justifiedParagraph">
-                        This project was based on the WELFake <a className={styles.link} href="https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification">dataset</a> which presented the Fake News Detection as a binary supervised learning problem.
+                        This was a group project was based on the WELFake <a className={styles.link} href="https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification">dataset</a> which presented the Fake News Detection as a binary supervised learning problem.
                         The project's effectiveness is based on the accuracy of the binary prediction.
-
                     </Text>
                     <Title className="homeTitleText3">Problem Statement</Title>
                     <Text className="justifiedParagraph">
@@ -208,7 +208,7 @@ function NLPProjectPage(): JSX.Element {
                 </Stack>
             </Container >
 
-
+            <BottomBar />
         </>
     )
 }

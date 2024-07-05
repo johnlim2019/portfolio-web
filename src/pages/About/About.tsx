@@ -5,6 +5,7 @@ import TopBar from "../../components/TopBar/TopBar"
 import { TopBarEnum } from "../../enum/TopBarEnum"
 import "./About.module.css"
 import aboutStyles from "./About.module.css"
+import BottomBar from "../../components/BottomBar/BottomBar"
 
 function About(): JSX.Element {
     return (
@@ -75,6 +76,7 @@ function About(): JSX.Element {
                     </Stack>
                 </Center>
             </Container>
+            <BottomBar />
         </>
 
     )

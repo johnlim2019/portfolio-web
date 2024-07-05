@@ -27,10 +27,18 @@
 
 .cardComponent {
     height: 100%;
-    width: 20%;
-    max-width: 10em;
+
     padding-top: 5px;
     padding-bottom: 5px;
+
+    @media (min-width: em(400px)) {
+        width: 100%;
+    }
+
+    @media (min-width: em(600px)) {
+        width: 20%;
+        max-width: 10em;
+    }
 }
 
 .headerContainer {
