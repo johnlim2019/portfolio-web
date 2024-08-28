@@ -21,6 +21,18 @@ function About(): JSX.Element {
                         <Center p='lg'>
                             <Divider orientation="vertical" color='white' h='5em' ></Divider>
                         </Center>
+                        <div className={aboutStyles.aboutHeader2} >Current Position</div>
+                        <div className={aboutStyles.aboutHeader3}>SUTD Roar Lab - Research Officer</div>
+                        <div className={aboutStyles.aboutText}>July 2024</div>
+                        <List>
+                            <List.Item>I am working with the Wefaa Robotics team to develop the Smorphi Imaginary Learning Platform</List.Item>
+                            <List.Item>An educational platform to expose primary school-aged children to robotics.</List.Item>
+                            <List.Item>I am revamping the Unity project to abide by Object-Oriented Programming principles such as Polymorphism and Publisher-Subscriber patterns for modular and flexible source code with loose coupling.</List.Item>
+                            <List.Item>I also help to run events such as the National Robotics Competition 2024 – Smorphi Category. </List.Item>
+                        </List>
+                        <Center p='lg'>
+                            <Divider orientation="vertical" color='white' h='5em' ></Divider>
+                        </Center>
                         <div className={aboutStyles.aboutHeader1} >Education</div>
                         <div className={aboutStyles.aboutText}>Bachelor of Engineering (Computer Science and Design)</div>
                         <div className={aboutStyles.aboutText}>Class of 2024 - Honours with Distinction</div>
@@ -70,7 +82,7 @@ function About(): JSX.Element {
                         </Center>
                         <div className={aboutStyles.aboutHeader1} >Skills</div>
                         <div className={aboutStyles.aboutHeader3}>Experience with the following frameworks and tools </div>
-                        <div className={aboutStyles.aboutText}><i>Spring Boot, Express.js, FastApi, React.js, Cypress.io, Echo (GO), Docker, Bash Scripting, PyTorch, TensorFlow, Postman, Figma, Adobe Illustrator</i></div>
+                        <div className={aboutStyles.aboutText}><i>Unity, Spring Boot, Express.js, FastApi, React.js, Cypress.io, Echo (GO), Docker, Bash Scripting, PyTorch, TensorFlow, Postman, Figma, Adobe Illustrator</i></div>
 
                         <Space h="xl"></Space>
                     </Stack>
