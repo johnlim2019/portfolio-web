@@ -21,7 +21,7 @@ function HomePage(): JSX.Element {
                         <Center p='1em'>
                             <Divider color="white" w="60%"></Divider>
                         </Center>
-                        <Title order={3} className="homeTitleText2">Full Stack Web Developer</Title>
+                        <Title order={3} className="homeTitleText2">Unity, React & Spring Boot Developer</Title>
                     </div>
                 </div>
             </AspectRatio>
