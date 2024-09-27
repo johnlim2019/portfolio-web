@@ -33,7 +33,7 @@ function CapstonePage(): JSX.Element {
                                 <Title >Count Calcula (TSI Counting)</Title>
                                 <Title order={4}>Team Members</Title>
                                 <Text flex='end'>
-                                    Celeste Ng(ESD), Pranhakar Dhilahesh(DAI), John Lim (CSD), Josiah Fong (CSD), Xiong Yang (CSD)
+                                    Celeste Ng(ESD), Dhilahesh Prabhakar (DAI), John Lim (CSD), Josiah Fong (CSD), Xiong Yang (CSD)
                                 </Text>
                                 <Title order={4}>Instructors</Title>
                                 <Text >Kwan Wei Lek</Text>
