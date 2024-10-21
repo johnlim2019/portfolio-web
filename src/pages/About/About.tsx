@@ -25,7 +25,7 @@ function About(): JSX.Element {
                         <div className={aboutStyles.aboutHeader3}>SUTD Roar Lab - Research Officer</div>
                         <div className={aboutStyles.aboutText}>July 2024</div>
                         <List>
-                            <List.Item>I am working with the Wefaa Robotics team to develop the Smorphi Imaginary Learning Platform. A 3D robot simulator build with Unity to expose children to coding and robotics</List.Item>
+                            <List.Item>I am working on the Smorphi Imaginary Learning Platform. A 3D robot simulator built with Unity to introduce children to coding and robotics</List.Item>
                             <List.Item>Managed sub-contractor team to develop the web platform that delivers the unity runtime to users.</List.Item>
                         </List>
                         <Center p='lg'>
