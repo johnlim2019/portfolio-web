@@ -26,9 +26,8 @@ function About(): JSX.Element {
                         <div className={aboutStyles.aboutText}>July 2024</div>
                         <List>
                             <List.Item>I am working with the Wefaa Robotics team to develop the Smorphi Imaginary Learning Platform</List.Item>
-                            <List.Item>An educational platform to expose primary school-aged children to robotics.</List.Item>
-                            <List.Item>I am revamping the Unity project to abide by Object-Oriented Programming principles such as Polymorphism and Publisher-Subscriber patterns for modular and flexible source code with loose coupling.</List.Item>
-                            <List.Item>I also help to run events such as the National Robotics Competition 2024 – Smorphi Category. </List.Item>
+                            <List.Item>A 3D robot simulator build with Unity to expose children to coding and robotics</List.Item>
+                            <List.Item>Managed sub-contractor team to develop the web platform that delivers the unity runtime to users.</List.Item>
                         </List>
                         <Center p='lg'>
                             <Divider orientation="vertical" color='white' h='5em' ></Divider>
