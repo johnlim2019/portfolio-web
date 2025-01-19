@@ -23,7 +23,7 @@ function About(): JSX.Element {
                         </Center>
                         <div className={aboutStyles.aboutHeader2} >Current Position</div>
                         <div className={aboutStyles.aboutHeader3}>SUTD Roar Lab - Research Officer (Project Manager/Developer)</div>
-                        <div className={aboutStyles.aboutText}>July 2024</div>
+                        <div className={aboutStyles.aboutText}>July 2024 - present</div>
                         <List>
                             <List.Item>I am working on the Smorphi Imaginary Learning Platform. A 3D robot simulator built with Unity to introduce children to coding and robotics</List.Item>
                             <List.Item>Managed sub-contractor team to develop the web platform that delivers the unity runtime to users.</List.Item>
